@@ -1,0 +1,40 @@
+#application.yml������Spring.profiles.active=test����˵Ĭ����test��������Ȼ�����������������ò�ͬ�ĸ��������Ĳ�ͬ������java -jar Ӧ�õ�jar�� --spring.profiles.active=prod
+spring:
+    profiles:
+        active: test
+    freemarker:
+          cache: false
+    datasource:
+            driver-class-name: com.mysql.jdbc.Driver
+            password: root
+            url: jdbc:mysql://localhost:3306/test
+            username: root
+    redis:
+            database: 0
+            host: localhost
+            password: ''
+            pool:
+                max-active: 8
+                max-idle: 8
+                max-wait: -1
+                min-idle: 0
+            port: 6379
+            timeout: 0
+
+
+com:
+    didispace:
+        blog:
+            desc: test
+            name: test
+            title: Spring Boot�̳�
+            bignumber: ${random.long}
+            number: ${random.int}
+            test1: ${random.int(10)}
+            test2: ${random.int[10,20]}
+            value: ${random.value}
+
+
+
+
+
