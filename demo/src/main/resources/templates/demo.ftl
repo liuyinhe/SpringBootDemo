@@ -5,7 +5,7 @@
     <title>Insert title here</title>
 </head>
 <body>
-请看说明：${descrip} <br/>
+请说明：${descrip} <br/>
 haahaaaa
 </body>
 </html>
